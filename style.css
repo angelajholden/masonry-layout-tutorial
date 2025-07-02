@@ -1,0 +1,85 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Nunito Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100%;
+	line-height: 1.65;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.primary-heading {
+	text-align: center;
+}
+
+.secondary-heading {
+	line-height: 1.25;
+}
+
+.secondary-heading a {
+	text-decoration: none;
+}
+
+.image {
+	margin: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+}
+
+.main {
+	max-width: 75rem;
+	padding: 1rem;
+	margin: 0 auto;
+	columns: 4 auto;
+}
+
+.article-item {
+	break-inside: avoid;
+	padding-bottom: 2rem;
+}
+
+.article-wrap {
+	padding: 1rem;
+	border: 1px solid #eaeaea;
+	border-bottom: 4px solid #eaeaea;
+}
+
+@media (max-width: 960px) {
+	.main {
+		columns: 2 auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.main {
+		columns: 1 auto;
+	}
+}
+
+.article-category {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.footer p {
+	text-align: center;
+}
