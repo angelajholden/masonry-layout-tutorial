@@ -51,6 +51,18 @@ img {
 	columns: 4 auto;
 }
 
+@media (max-width: 960px) {
+	.wrap {
+		columns: 2 auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.wrap {
+		columns: 1 auto;
+	}
+}
+
 .article-buttons {
 	max-width: 75rem;
 	margin: 0 auto 2rem;
@@ -92,18 +104,6 @@ img {
 	padding: 1rem;
 	border: 1px solid #eaeaea;
 	border-bottom: 4px solid #eaeaea;
-}
-
-@media (max-width: 960px) {
-	.wrap {
-		columns: 2 auto;
-	}
-}
-
-@media (max-width: 600px) {
-	.wrap {
-		columns: 1 auto;
-	}
 }
 
 .article-category {
