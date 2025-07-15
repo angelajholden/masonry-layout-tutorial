@@ -44,11 +44,43 @@ img {
 	overflow: hidden;
 }
 
-.main {
+.wrap {
 	max-width: 75rem;
 	padding: 1rem;
 	margin: 0 auto;
 	columns: 4 auto;
+}
+
+.article-buttons {
+	max-width: 75rem;
+	margin: 0 auto 2rem;
+	padding: 0 1rem;
+	text-align: center;
+}
+
+.button {
+	background-color: #fff;
+	border: 2px solid #222;
+	padding: 1rem 2rem;
+	margin: 0;
+	cursor: pointer;
+	transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+	.button {
+		display: block;
+		width: 100%;
+		margin: 1rem 0;
+	}
+}
+
+.button.active,
+.button:hover,
+.button:active,
+.button:focus {
+	background-color: #222;
+	color: #fff;
 }
 
 .article-item {
@@ -63,13 +95,13 @@ img {
 }
 
 @media (max-width: 960px) {
-	.main {
+	.wrap {
 		columns: 2 auto;
 	}
 }
 
 @media (max-width: 600px) {
-	.main {
+	.wrap {
 		columns: 1 auto;
 	}
 }
